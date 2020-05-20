@@ -16,7 +16,7 @@ if GetKeyState("CapsLock", "T") = 1
     Gui, Color, FFFFF0
     WinSet, TransColor, FFFFF0
     Gui, -Caption +AlwaysOnTop
-    Gui, Add, Picture, w1000 h-1 x0 y0 vPicR, %A_WorkingDir%\images\CapsLockON.png
+    Gui, Add, Picture, w1000 h-1 x0 y0 vPicR, %A_ScriptDir%\images\CapsLockON.png
     ; 960 - half of width
     Gui, Show, x460 y800 NoActivate
 
@@ -26,7 +26,7 @@ if GetKeyState("CapsLock", "T") = 1
     Gui, Color, FFFFF0
     WinSet, TransColor, FFFFF0
     Gui, -Caption +AlwaysOnTop
-    Gui, Add, Picture, w1000 h-1 xCenter yCenter vPicL, %A_WorkingDir%\images\CapsLockON.png
+    Gui, Add, Picture, w1000 h-1 xCenter yCenter vPicL, %A_ScriptDir%\images\CapsLockON.png
     ; -960 - half of width
     Gui, Show, x-1460 y800 NoActivate
 }
