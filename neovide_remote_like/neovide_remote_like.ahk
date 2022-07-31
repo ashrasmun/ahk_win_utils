@@ -11,6 +11,7 @@ if A_Args.Length() != 1
 
 WinGet, Windows, List
 found := false
+
 Loop, %Windows%
 {
     this_id := "ahk_id " . Windows%A_Index%
@@ -36,5 +37,5 @@ if found
 }
 else
 {
-    Run "neovide """%1%""""
+    Run neovide "%1%"
 }
