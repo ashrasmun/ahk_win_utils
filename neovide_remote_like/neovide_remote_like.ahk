@@ -17,7 +17,7 @@ Loop, %Windows%
     this_id := "ahk_id " . Windows%A_Index%
     WinGetTitle, this_title, %this_id%
 
-    if RegExMatch(this_title, "Neovide.*")
+    if RegExMatch(this_title, "Neovim")
     {
         found := true
     }
@@ -25,7 +25,7 @@ Loop, %Windows%
 
 if found
 {
-    WinActivate, Neovide
+    WinActivate, Neovim
 
     ; Make the sending fast as heck boi
     SetKeyDelay -1
@@ -37,5 +37,5 @@ if found
 }
 else
 {
-    Run neovide "%1%"
+    Run nvim-qt "%1%"
 }
